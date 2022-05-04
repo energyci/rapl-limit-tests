@@ -11,3 +11,7 @@ We found no significan difference between SGX enabled and disabled, but reccomen
 
 These two system tests are written in C# and utilize the C# Stopwatch.GetTimestamp for time measurements. 
 The system tests and this guide is setup to facilitate a one hour run time, while also saving the measurements in memory during runtime and writing them to a file afterwards, which means that up to 8 gigabyte of memory can be used during the runtime. 
+
+
+# SGX
+https://github.com/intel/sgx-software-enable
