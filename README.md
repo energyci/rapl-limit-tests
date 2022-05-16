@@ -7,7 +7,7 @@ RAPL documentation states this update rate to be 1ms, while other tests (includi
 
 To test the sample rate for 1 hour(3600 seconds), run the following command:
 ```bash
-$ dotnet run --configuration=release --project sample-rate 3600 > sample-rate.txt
+$ dotnet run --configuration=release --project sample-rate core 3600 > sample-rate.txt
 ```
 
 The second test is [`loop-rate`](loop-rate) which serves the purpose of verifying that the results found with #rapl_sample_rate is accurate and that the while-loop runs fast enough that it does not miss rapl update. This is done by veryfying that the same value is read from the rapl energy usage file multiple times in a row. 
